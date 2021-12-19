@@ -8,5 +8,5 @@ login_name="$(whoami)"
 # For new line I use $'\n' here
 message="New login to server"$'\n'"$login_name"$'\n'"$login_ip"$'\n'"$login_date"
 
-#send it to telegram
-telegram-send "$message"
+# send it to telegram, target is defined is the telegram-send.conf file 
+telegram-send target "$message"
